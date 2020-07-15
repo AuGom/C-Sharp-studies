@@ -49,6 +49,7 @@
             this.btnLimpa.TabIndex = 0;
             this.btnLimpa.Text = "Limpar";
             this.btnLimpa.UseVisualStyleBackColor = true;
+            this.btnLimpa.Click += new System.EventHandler(this.btnLimpa_Click);
             // 
             // label1
             // 
@@ -92,6 +93,7 @@
             this.btnCalc.TabIndex = 5;
             this.btnCalc.Text = "Calcular";
             this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
             // btnSair
             // 
@@ -101,6 +103,7 @@
             this.btnSair.TabIndex = 6;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // txtNota3
             // 

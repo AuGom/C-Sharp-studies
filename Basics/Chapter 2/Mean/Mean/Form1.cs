@@ -17,6 +17,26 @@ namespace Mean
             InitializeComponent();
         }
 
-        
+        private void btnLimpa_Click(object sender, EventArgs e)
+        {
+            txtNota1.Text = "";
+            txtNota2.Text = "";
+            txtNota3.Text = "";
+            txtResultado.Text = "";
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            double nota1 = Convert.ToDouble(txtNota1.Text);
+            double nota2 = Convert.ToDouble(txtNota2.Text);
+            double nota3 = Convert.ToDouble(txtNota3.Text);
+            double media = (nota1 + nota2 + nota3) / 3;
+            txtResultado.Text = Convert.ToString(media);
+        }
     }
 }
