@@ -51,5 +51,12 @@ namespace Switch
                     break;
             }
         }
+
+        private void btnProx_Click(object sender, EventArgs e)
+        {
+            Form2 novo = new Form2();
+            novo.Show();
+            this.Visible = false;
+        }
     }
 }

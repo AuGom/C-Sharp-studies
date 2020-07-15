@@ -30,6 +30,7 @@
         {
             this.cmbDia = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnProx = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmbDia
@@ -58,11 +59,22 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Escolha um dia:";
             // 
+            // btnProx
+            // 
+            this.btnProx.Location = new System.Drawing.Point(298, 239);
+            this.btnProx.Name = "btnProx";
+            this.btnProx.Size = new System.Drawing.Size(75, 23);
+            this.btnProx.TabIndex = 2;
+            this.btnProx.Text = "Proximo";
+            this.btnProx.UseVisualStyleBackColor = true;
+            this.btnProx.Click += new System.EventHandler(this.btnProx_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(406, 290);
+            this.Controls.Add(this.btnProx);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbDia);
             this.Name = "Form1";
@@ -76,6 +88,7 @@
 
         private System.Windows.Forms.ComboBox cmbDia;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnProx;
     }
 }
 
