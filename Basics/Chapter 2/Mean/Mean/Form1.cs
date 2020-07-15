@@ -37,6 +37,13 @@ namespace Mean
             double nota3 = Convert.ToDouble(txtNota3.Text);
             double media = (nota1 + nota2 + nota3) / 3;
             txtResultado.Text = Convert.ToString(media);
+
+            if (media<5) 
+                MessageBox.Show("Aluno reprovado."); 
+            else if (media<7) 
+                MessageBox.Show("Aluno em recuperação."); 
+            else 
+                MessageBox.Show("Aluno aprovado.");
         }
     }
 }
