@@ -16,5 +16,17 @@ namespace Login
         {
             InitializeComponent();
         }
+
+        private void btnConf_Click(object sender, EventArgs e)
+        {
+            string user = txtUser.Text;
+            string pass = txtSenha.Text;
+            if(user=="admin" && pass == "admin")
+            {
+                Form2 novo = new Form2(); 
+                novo.Show(); 
+                this.Visible = false;
+            }
+        }
     }
 }

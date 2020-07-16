@@ -28,21 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnConf = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // btnConf
+            // 
+            this.btnConf.Location = new System.Drawing.Point(249, 194);
+            this.btnConf.Name = "btnConf";
+            this.btnConf.Size = new System.Drawing.Size(75, 23);
+            this.btnConf.TabIndex = 0;
+            this.btnConf.Text = "Confirmar";
+            this.btnConf.UseVisualStyleBackColor = true;
+            this.btnConf.Click += new System.EventHandler(this.btnConf_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(185, 106);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Usuário";
+            // 
+            // txtUser
+            // 
+            this.txtUser.Location = new System.Drawing.Point(292, 103);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(100, 20);
+            this.txtUser.TabIndex = 2;
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(292, 140);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(100, 20);
+            this.txtSenha.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(185, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Senha";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(246, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Controle de Acesso";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 285);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtSenha);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnConf);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnConf;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtSenha;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
