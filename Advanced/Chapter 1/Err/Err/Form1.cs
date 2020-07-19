@@ -29,6 +29,11 @@ namespace Err
             {
                 MessageBox.Show("Apenas numeros", "Catch");
             }
+            finally
+            {
+                MessageBox.Show("aperte OK para sair.");
+                Close();
+            }
         }
     }
 }
